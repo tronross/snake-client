@@ -13,9 +13,6 @@ const connect = function() {
 
   conn.on("connect", () => {
     conn.write("Name: 555");
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 50)
   });
 
   // interpret incoming data as text
