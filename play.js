@@ -3,6 +3,5 @@ const { setupInput } = require("./input");
 
 console.log("Connecting ..."); // notify user function has been called
 
-connect();
 
-setupInput();
+setupInput(connect());
