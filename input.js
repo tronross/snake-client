@@ -1,5 +1,4 @@
-// setup interface to handle user input from stdin
-
+// setupInput: setup interface to handle user input from stdin
 const setupInput = function() {
   const stdin = process.stdin;
   stdin.setRawMode(true);
@@ -9,6 +8,7 @@ const setupInput = function() {
   return stdin;
 };
 
+// handleUserInput: processes user stdin data
 const handleUserInput = function(uInput) {
   // \u0003 maps to ctrl+c input to terminate game
   if (uInput === '\u0003') {
@@ -16,3 +16,5 @@ const handleUserInput = function(uInput) {
   }
 
 };
+
+module.exports = { setupInput, };
