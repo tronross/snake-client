@@ -24,6 +24,12 @@ const handleUserInput = function(uInput) {
     connection.write("Move: down");
   } else if (uInput === '\u0064') {
     connection.write("Move: right");
+  } else if (uInput === '\u006C') {
+    connection.write("Say: Meowz");
+  } else if (uInput === '\u0070') {
+    connection.write("Say: Yaasssssss");
+  } else if (uInput === '\u0071') {
+    connection.write("Say: Abra 4ever");
   }
   
 };
