@@ -17,13 +17,13 @@ const handleUserInput = function(uInput) {
   if (uInput === '\u0003') {
     process.exit();
   } else if (uInput === '\u0077') {
-    console.log("Sweeet sweet w yass");
+    connection.write("Move: up");
   } else if (uInput === '\u0061') {
-    console.log("aaaaaaaaaaaaaaaaaaaaa");
+    connection.write("Move: left");
   } else if (uInput === '\u0073') {
-    console.log("snekssssssssss");
+    connection.write("Move: down");
   } else if (uInput === '\u0064') {
-    console.log("dd d d d d d d dd");
+    connection.write("Move: right");
   };
   
 
