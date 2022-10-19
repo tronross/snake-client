@@ -17,7 +17,7 @@ const handleUserInput = function(uInput) {
   if (uInput === '\u0003') {
     process.exit();
     // direction key mappings for WASD and (or) arrow keys (as an alternate control surface)
-  } else if (uInput === '\u0077' || uInput === "\033[A") { 
+  } else if (uInput === '\u0077' || uInput === "\033[A") {
     connection.write("Move: up");
   } else if (uInput === '\u0061' || uInput === "\033[D") {
     connection.write("Move: left");
