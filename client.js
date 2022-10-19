@@ -7,7 +7,7 @@ const connect = function() {
     port: 50541,
   });
 
-  conn.on ("connect", () => {
+  conn.on("connect", () => {
     console.log("Connected to game server");
   });
 

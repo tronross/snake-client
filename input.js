@@ -24,9 +24,8 @@ const handleUserInput = function(uInput) {
     connection.write("Move: down");
   } else if (uInput === '\u0064') {
     connection.write("Move: right");
-  };
+  }
   
-
 };
 
 module.exports = { setupInput, };
