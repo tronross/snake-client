@@ -1,4 +1,4 @@
-const { connect } = require('./client.js')
+const { connect } = require('./client.js');
 
 // setup interface to handle user input from stdin
 
@@ -11,10 +11,10 @@ const setupInput = function() {
   return stdin;
 };
 
-const handleUserInput = function() {
-  // \u0003 maps to ctrl+c input
-if (key === '\u0003') {
-  process.exit();
-}
+const handleUserInput = function(uInput) {
+  // \u0003 maps to ctrl+c input to terminate game
+  if (uInput === '\u0003') {
+    process.exit();
+  }
 
 };
