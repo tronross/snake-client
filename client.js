@@ -8,7 +8,7 @@ const connect = function(name) {
     host: IP,
     port: PORT,
   });
-  console.log(name);
+  
   conn.on("connect", () => {
     console.log("Connected to game server");
   });

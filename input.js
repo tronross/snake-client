@@ -32,6 +32,8 @@ const handleUserInput = function(uInput) {
     connection.write("Say: Yaasssssss");
   } else if (uInput === '\u0071') {  // q maps to:
     connection.write("Say: Abra 4ever");
+  } else if (uInput === '\u006F') {  // o maps to:
+    connection.write("Say: Ssssssss");
   }
   
 };
